@@ -1,16 +1,32 @@
 @import 'tailwindcss';
 
 @theme {
-    --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --color-primary: #f67280;
-    --color-primary-content: #101828;
-    --color-complementary: #355c7d;
-    --background-image-noise: linear-gradient(
-            to bottom,
-            color-mix(in oklab, var(--color-gray-950) 0%, transparent),
-            color-mix(in oklab, var(--color-gray-950) 100%, transparent)
-        ),
-        url('/images/noise.png');
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  /* Updated Brand Colors */
+  --color-brand-blackbox: #0A2D2E;
+  --color-brand-mallard: #1C4E4F;
+  --color-brand-moonlitforest: #436E6F;
+  --color-brand-gothic: #6A8E8F;
+  --color-brand-greyarea: #879693;
+  --color-brand-gatewaygrey: #A49E97;
+  --color-brand-sunkissedbeach: #DEAE9F;
+  --color-brand-fiesta: #EFD7CF;
+  --color-brand-frothymilk: #F7EBE7;
+  --color-brand-white: #FFFFFF;
+
+  /* Keep any existing project colors if needed */
+  --color-primary: #f67280;
+  --color-primary-content: #101828;
+  --color-complementary: #355c7d;
+
+  /* Background gradient (unchanged) */
+  --background-image-noise: linear-gradient(
+    to bottom,
+    color-mix(in oklab, var(--color-gray-950) 0%, transparent),
+    color-mix(in oklab, var(--color-gray-950) 100%, transparent)
+  ),
+  url('/images/noise.png');
 }
 
 @layer base {
